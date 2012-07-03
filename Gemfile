@@ -9,6 +9,8 @@ gem 'rails', '3.2.6'
  group :development, :test do 
   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'sqlite3', '1.3.6'
+  gem 'rspec-rails','2.10.0'
+  gem 'rspec','2.10.0'
 end 
 
 # Gems used only for assets and not required
@@ -23,13 +25,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :development do
-	gem 'rspec-rails','2.10.0'
-end
-
-group :test do
-	gem 'rspec','2.10.0'
-end
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
