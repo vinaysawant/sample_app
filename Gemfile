@@ -13,6 +13,7 @@ gem 'rails', '3.2.6'
   gem 'rspec','2.10.0'
   gem 'spork'
   gem 'autotest'
+  gem 'webrat'
 end 
 
 # Gems used only for assets and not required
