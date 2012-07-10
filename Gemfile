@@ -1,12 +1,13 @@
 source 'https://rubygems.org'
 
+#ruby '1.9.3'
 gem 'rails', '3.2.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
- group :development, :test do 
+group :development, :test do 
   gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'sqlite3', '1.3.6'
   gem 'rspec-rails','2.10.0'
@@ -14,6 +15,12 @@ gem 'rails', '3.2.6'
   gem 'spork'
   gem 'autotest'
   gem 'webrat'
+  gem 'heroku'
+end
+
+group :production do
+  gem 'pg'
+  gem 'thin'
 end 
 
 # Gems used only for assets and not required
