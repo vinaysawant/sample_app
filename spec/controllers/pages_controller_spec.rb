@@ -11,7 +11,7 @@ describe PagesController do
 
     it "should have the right title" do
 			get 'home'
-			response.should have_selector("title",:content => "#{@base_title} | Home")
+			response.should have_selector("title",:content => "highest dho | Home")
     end
 
     it "should have non-blank body" do

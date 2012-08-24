@@ -1,17 +1,27 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 	<head> 	
   	<title> <%= title %> </title>
 			<%= csrf_meta_tag %>
 			<%= render 'layouts/stylesheets'%>
-</head> 
+	</head> 
 <body>
+	<header class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <%= link_to "sample app", '#', id: "logo" %>
+        <nav>
+          <ul class="nav pull-right">
+            <li><%= link_to "Home",    '#' %></li>
+            <li><%= link_to "Help",    '#' %></li>
+            <li><%= link_to "Sign in", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 	<div class="container">	
-		<%= render 'layouts/header'%>
-		<section class="round">
-			<%= yield %>
-		</section>
-		<%= render 'layouts/footer'%>	
+					<%= yield %>		
 	</div>
 </body>
 </html>
